@@ -1,0 +1,115 @@
+body {background-color: #dcd0ff;}
+
+/*}*/
+/*h2 {*/
+/*  color:#ffffff;*/
+/*  font-size: 35px;*/
+/*  text-align:center;*/
+/*}*/
+/*h3 {*/
+/*  color:#ffffff;*/
+/*  font-size: 25px;*/
+/*  text-align:center;*/
+/*}*/
+
+a:link {
+  color: #5a385d;
+}
+
+a:visited {
+  color: #5a385d;
+}
+
+a:hover {
+  color: white;
+}
+
+.left-item
+{
+  text-align:left;
+  font-size: 15px;
+}
+
+main { font-family: Verdana;margin: 25px 100px 75px 100px;}
+
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+.questionitem {
+  margin: 20px 0px 10px 0px;
+}
+
+main .form-control
+{
+    /* Center form controls */
+
+    display: inline-block;
+    /* Override Bootstrap's 100% width for form controls */
+    width: 75%;
+    height: 75%
+}
+
+.smallwidth
+{
+    display: inline-block;
+    width: 30%;
+    height: 30%;
+}
+
+.textbox
+{
+    display: inline-block;
+    width: 75%;
+    height: 75%;
+}
+
+.center
+{
+    text-align: center;
+}
+
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+
+main table
+{
+    text-align: left;
+}
+
+main tfoot
+{
+    font-weight: bold;
+}
+

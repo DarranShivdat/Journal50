@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Journal Log
+{% endblock %}
+
+{% block main %}
+
+
+    <h1 class="center">Your Journal History</h1>
+    <hr>
+    <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Title</th>
+                <th>Daily Reflection Assesment (DRA)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index in entries%}
+            <tr>
+                <td>
+                    {{index.time}}
+                </td>
+                <td>
+
+                    <a href="/viewpost/{{ index.id }}"> {{index.title}}</a>
+                </td>
+                <td>
+                    {{index.DRA}}
+                </td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+{% endblock %}

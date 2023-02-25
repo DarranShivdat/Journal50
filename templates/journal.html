@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Journal
+{% endblock %}
+
+{% block main %}
+<h1 class="center">Journal Here</h1>
+<hr>
+<h3 class="center">Some Questions to Consider While Journaling:</h3>
+
+<h5>
+    <ul>
+        <li>How was my day?</li>
+        <li>What am I proud of accomplishing today?</li>
+        <li>What is something fortunate that happened today?</li>
+        <li>Who did I talk to today?</li>
+        <li>What made me happy today?</li>
+        <li>What can I do better tomorrow?</li>
+    </ul>
+</h5>
+<br>
+
+<form action="/journal" method="post">
+    <div class="form-group">
+
+        <input autocomplete="off" autofocus class="form-control" name="title" placeholder="Title" type="text">
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" autocomplete="off" autofocus class="form-control" name="journal" placeholder="Journal Here" ></textarea>
+    </div>
+
+    <!--Questions-->
+    <h4>Questions</h4>
+    <h6>
+    <div class="form-group">
+        <div class = "questionitem">
+            How was your day? (1-10)
+        </div>
+        <div class = "smallwidth">
+            <input autocomplete="off" class="form-control" name="question1" placeholder="Answer Here" type="number" min = 1 max = 10>
+        </div>
+
+    </div>
+    <div class="form-group">
+        <div class = "questionitem">
+            How would you rate your mood today? (1 is very sad and 10 is extremely happy)
+        </div>
+        <div class = "smallwidth">
+            <input autocomplete="off" class="form-control" name="question2" placeholder="Answer Here" type="number" min = 1 max = 10>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class = "questionitem">
+            How would you rate your social interaction? (1 represents being alone and 10 represents being very social)
+        </div>
+        <div class = "smallwidth">
+            <input autocomplete="off" class="form-control" name="question3" placeholder="Answer Here" type="number" min = 1 max = 10>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class = "questionitem">
+            How well did you sleep? (1 represents no good sleep and 10 represents being well rested)
+        </div>
+        <div class = "smallwidth">
+            <input autocomplete="off" class="form-control" name="question4" placeholder="Answer Here" type="number" min = 1 max = 10>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class = "questionitem">
+            How much was your work load today? (1 represents unsatisfactory amounts of work and 10 represents perfect amount of work)
+        </div>
+        <div class = "smallwidth">
+            <input autocomplete="off" class="form-control" name="question5" placeholder="Answer Here" type="number" min = 1 max = 10>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class = "questionitem">
+            How was your appetite? (1 represents poor appetite and 10 represents a strong appetite) <br>
+        </div>
+        <div class = "smallwidth">
+            <input autocomplete="off" class="form-control" name="question6" placeholder="Answer Here" type="number" min = 1 max = 10>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class = "questionitem">
+            How well did you concentrate? (1 represents no concentration and 10 represents being highly concentrated)
+        </div>
+        <div class = "smallwidth">
+            <input autocomplete="off" class="form-control" name="question7" placeholder="Answer Here" type="number" min = 1 max = 10>
+        </div>
+    </div>
+    <br>
+    </h6>
+    <button class = "btn btn-primary" type = "submit">Submit Journal Entry and Question Answers</button>
+
+</form>
+
+{% endblock %}

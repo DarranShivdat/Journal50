@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/register" method="post">
+        <div class = "center">
+            <div class="form-group">
+                <div class = "smallwidth">
+                    <b><h3>Username:</h3></b>
+                    <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class = "center">
+            <div class="form-group">
+                <div class = "smallwidth">
+                    <b><h3 class="center">Password:</h3></b>
+                    <input class="form-control" name="password" placeholder="Password" type="password">
+                </div>
+            </div>
+        </div>
+        <!-- Confirming password-->
+        <div class = "center">
+            <div class="form-group">
+                <div class = "smallwidth">
+                    <b><h3 class="center">Confirmation Password:</h3></b>
+                    <input class="form-control" name="confirmation" placeholder="Confirm Password" type="password">
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Register</button>
+        </div>
+    </form>
+{% endblock %}

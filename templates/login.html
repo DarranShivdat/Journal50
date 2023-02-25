@@ -1,0 +1,31 @@
+<!--Adapted from cs50 finance-->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <form action="/login" method="post">
+        <div class = "center">
+            <div class="form-group">
+                <div class = "smallwidth">
+                    <b><h3>Username:</h3></b>
+                    <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class = "center">
+            <div class="form-group">
+                <div class = "smallwidth">
+                    <b><h3 class="center">Password:</h3></b>
+                    <input class="form-control" name="password" placeholder="Password" type="password">
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Log In</button>
+        </div>
+
+    </form>
+{% endblock %}

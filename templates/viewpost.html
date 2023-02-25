@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    View Post
+{% endblock %}
+
+{% block main %}
+
+<body>
+    <h1 class="center">{{journal_post.title}}</h1>
+    <hr>
+    <div class = "center">
+        <textarea rows = "20" cols = "70">{{journal_post.entry}}</textarea>
+    </div>
+    <left-aligned>{{journal_post.time}}</left-aligned>
+
+
+</body>
+{% endblock %}
