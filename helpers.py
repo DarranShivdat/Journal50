@@ -1,4 +1,4 @@
-# Taken from Cs50 Finance
+# From Cs50 Finance
 import os
 import requests
 import urllib.parse
